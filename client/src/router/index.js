@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
 import AboutUsView from "../views/AboutUsView.vue";
@@ -9,7 +9,7 @@ import RidesView from "../views/RidesView.vue";
 import { useAuthStore } from "../stores/auth";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     { path: "/", name: "home", component: HomeView },
     { path: "/about", name: "about", component: AboutUsView },

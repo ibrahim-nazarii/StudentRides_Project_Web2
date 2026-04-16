@@ -78,11 +78,13 @@ const mission = computed(() =>
   }))
 );
 
+const base = import.meta.env.BASE_URL;
+
 const people = computed(() => [
   {
     name: "Eya LAHOUEL",
     initials: "EY",
-    photo: "/images/Eya.png",
+    photo: `${base}images/Eya.png`,
     role: "Frontend",
     hue: 205,
     bio: i18n.t("about.bios.eya"),
@@ -90,7 +92,7 @@ const people = computed(() => [
   {
     name: "Ibrahim NAZARI",
     initials: "IB",
-    photo: "/images/Ibrahim.png",
+    photo: `${base}images/Ibrahim.png`,
     role: "Full-stack",
     hue: 280,
     bio: i18n.t("about.bios.ibrahim"),
@@ -98,7 +100,7 @@ const people = computed(() => [
   {
     name: "Rania KRAIEM",
     initials: "RA",
-    photo: "/images/Rania.png",
+    photo: `${base}images/Rania.png`,
     role: "Backend",
     hue: 160,
     bio: i18n.t("about.bios.rania"),
